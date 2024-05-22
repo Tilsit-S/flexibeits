@@ -1,0 +1,83 @@
+.business {
+    overflow: hidden;
+
+    &__title {
+        @include second-title;
+        margin-bottom: 67px;
+    }
+
+    &__features {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+    }
+
+    &__company {
+        width: 537px;
+    }
+
+    &__picture {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 505px;
+        height: 314px;
+        margin-bottom: 56px;
+    }
+
+    &__description {
+        display: inline-block;
+        width: 370px;
+        font-weight: 600;
+        font-size: 26px;
+        line-height: 145%;
+        margin-bottom: 35px;
+    }
+
+    &__list {
+        padding-left: 93px;
+    }
+
+    &__item {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        &::before {
+            position: absolute;
+            top: -4px;
+            left: -93px;
+            content: "";
+            display: block;
+            width: 62px;
+            height: 62px;
+            background: #d9d9d9;
+            border-radius: 15px;
+        }
+        
+        p {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 145%;
+        }
+
+        &:not(:last-child) {
+            margin-bottom: 49px;
+        }
+
+        &:nth-child(2) {
+
+            &::before {
+                top: -18px;
+            }
+        }
+    }
+
+    &__self-employed {
+        padding-top: 72px;
+    }
+
+    &__self-employed .business__description {
+        width: 400px;
+    }
+}
