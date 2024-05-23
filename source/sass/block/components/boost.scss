@@ -1,0 +1,15 @@
+.boost {
+    overflow: hidden;
+
+    &__title {
+        @include second-title;
+        margin-bottom: 9px;
+    }
+
+    &__title-description {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 145%;
+        color: rgba(0, 0, 0, 0.5);
+    }
+}
