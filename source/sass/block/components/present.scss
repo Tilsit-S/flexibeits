@@ -4,6 +4,7 @@
     margin-bottom: 280px;
 
     &__wrapper {
+        position: relative;
         background: #f4fafd;
         border-radius: 25px;
         padding-bottom: 260px;
@@ -59,8 +60,8 @@
 
     &__products {
         position: absolute;
-        bottom: -17%;
-        right: 18.5%;
+        bottom: -16.8%;
+        right: 5.5%;
         display: grid;
         grid-template-columns: 720px 467px;
         grid-template-rows: auto auto;

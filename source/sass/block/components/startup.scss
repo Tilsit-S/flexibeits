@@ -1,0 +1,67 @@
+.startup {
+    overflow: hidden;
+
+    &__title {
+        @include second-title;
+        margin-bottom: 10px;
+    }
+
+    &__title-description {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 145%;
+        color: rgba(0, 0, 0, 0.5);
+        margin-bottom: 40px;
+    }
+
+    &__features {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+
+        .automation {
+            width: 716px;
+            padding: 44px 46px 0 46px;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            border-radius: 25px;
+
+            &__title {
+                font-weight: 600;
+                font-size: 26px;
+                line-height: 145%;
+                color: rgba(0, 0, 0, 0.85);
+                margin-bottom: 8px;
+            }
+
+            &__title-description {
+                width: 435px;
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 145%;
+                color: rgba(0, 0, 0, 0.85);
+            }
+        }
+
+        .chat-bot {
+            width: 454px;
+            padding: 44px 46px 0 46px;
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            border-radius: 25px;
+
+            &__title {
+                font-weight: 600;
+                font-size: 26px;
+                line-height: 145%;
+                color: rgba(0, 0, 0, 0.85);
+                margin-bottom: 8px;
+            }
+
+            &__title-description {
+                font-weight: 400;
+                font-size: 18px;
+                line-height: 145%;
+                color: rgba(0, 0, 0, 0.85);
+            }
+        }
+    }
+}
