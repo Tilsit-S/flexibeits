@@ -1,5 +1,6 @@
 .startup {
     overflow: hidden;
+    margin-bottom: 230px;
 
     &__title {
         @include second-title;
@@ -10,11 +11,12 @@
         font-weight: 500;
         font-size: 32px;
         line-height: 145%;
-        color: rgba(0, 0, 0, 0.5);
+        color: $gray-text;
         margin-bottom: 40px;
     }
 
     &__features {
+        height: 688px;                      //temporary edit
         display: flex;
         flex-flow: row nowrap;
         justify-content: space-between;
