@@ -1,0 +1,74 @@
+.necessary {
+    overflow: hidden;
+    margin-bottom: 226px;
+
+    &__title {
+        font-weight: 700;
+        font-size: 44px;
+        line-height: 145%;
+        color: rgba(0, 0, 0, 0.85);
+        margin-bottom: 54px;
+    }
+
+    &__tabs {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: flex-start;
+    }
+
+    &__tabs li:not(:last-child) {
+        margin-right: 3px;
+    }
+
+    &__tabs li {
+        &:nth-child(2) a {
+            background: rgba(206, 143, 255, 0.1);
+        }
+
+        &:nth-child(3) a {
+            background: rgba(255, 174, 99, 0.1);
+        }
+
+        &:nth-child(4) a {
+            background: rgba(79, 226, 66, 0.1);
+        }
+
+        &:nth-child(5) a {
+            background: rgba(234, 216, 59, 0.1);
+        }
+    }
+
+    &__tabs-title {
+        display: flex;
+        width: 182px;
+        padding: 16px 0;
+        justify-content: center;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 145%;
+        color: rgba(0, 0, 0, 0.85);
+        background: rgba(87, 153, 255, 0.3);
+        border-radius: 14px;
+        cursor: pointer;
+    }
+
+    &__tabs-panel {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    &__tabs-title {
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 145%;
+        color: rgba(0, 0, 0, 0.85);
+        margin-bottom: 20px;
+    }
+
+    &__tabs-description {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 145%;
+        color: rgba(0, 0, 0, 0.5);
+    }
+}

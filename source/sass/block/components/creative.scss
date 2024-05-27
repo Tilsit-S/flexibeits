@@ -1,5 +1,6 @@
 .creative {
     overflow: hidden;
+    margin-bottom: 232px;
 
     &__title {
         @include second-title;
@@ -11,13 +12,13 @@
         font-size: 32px;
         line-height: 145%;
         color: $gray-text;
-        margin-bottom: 30px;
+        margin-bottom: 36px;
     }
 
     &__list {
         display: flex;
         flex-flow: row wrap;
-        align-items: flex-start;
+        align-items: stretch;
         justify-content: space-between;
         gap: 0 20px;
 
@@ -25,13 +26,42 @@
 
     &__item {
         width: 583px;
+        padding: 35px 36px;
+        border-radius: 25px;
         background-color: aqua;
 
-        
+        &:nth-child(1) {
+            margin-bottom: 40px;
+            background: linear-gradient(201deg, #ffc700 0%, rgba(255, 0, 122, 0.6) 29.86%, rgba(143, 0, 255, 0) 100%), linear-gradient(180deg, #478cf6 0%, #3060f1 100%);
+        }
+
+        &:nth-child(2) {
+            background: linear-gradient(36deg, #7e50fe 0%, #35d5df 100%);;
+            padding-bottom: 75px;
+        }
+
+        &:nth-child(3) {
+            background: linear-gradient(219deg, #ffcf26 0%, #e55605 100%);;
+        }
+
+        &:nth-child(4) {
+            background: linear-gradient(352deg, #5bbc53, 0%, #c5e020 30%), linear-gradient(352deg, #c5e020 0%, rgba(173, 255, 0, 0) 100%);
+            margin-top: 44px;
+        }
     }
 
-    &__item:nth-child(3),
-    &__item:nth-child(4) {
-        margin-bottom: 20px;
+    &__item-title {
+        font-weight: 600;
+        font-size: 27px;
+        line-height: 145%;
+        color: $white;
+        margin-bottom: 18px;
+    }
+
+    &__item-text {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 145%;
+        color: rgba(255, 255, 255, 0.85);
     }
 }
