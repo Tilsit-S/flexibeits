@@ -10,8 +10,24 @@
     &__text {
         display: flex;
         flex-flow: column nowrap;
+        padding: 29px 25px 42px 22px;
         background: $white;
-        margin: 3px;
+        margin: 5px;
         border-radius: 19px;
+    }
+
+    &__title {
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 145%;
+        color: rgba(0, 0, 0, 0.85);
+        margin-bottom: 6px;
+    }
+
+    &__some-text {
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 145%;
+        color: rgba(0, 0, 0, 0.85);
     }
 }

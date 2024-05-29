@@ -1,0 +1,23 @@
+.join {
+    overflow: hidden;
+    margin-bottom: 150px;
+
+    &__wrapper {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        background: $black;
+        border-radius: 25px;
+    }
+
+    &__title {
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 145%;
+        color: $white;
+    }
+
+    &__link {
+        color: $white;
+    }
+}
