@@ -1,7 +1,7 @@
 $(document).ready(function(){
     $('.blog__slider').slick({
-        arrows: false,
-        dots: true,
+        arrows: true,
+        dots: false,
         variableWidth: true,
         adaptiveHeight: true,
         infinite: false,
