@@ -106,12 +106,15 @@ ul {
     }
 }
 
+input {
+    cursor: pointer;
+}
+
 label {
     cursor: pointer;
 }
 
-input {
-    cursor: pointer;
-    outline: none;
+.invalid {
+    display: none;
 }
 
