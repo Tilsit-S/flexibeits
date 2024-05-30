@@ -1,13 +1,21 @@
 .join {
     overflow: hidden;
-    margin-bottom: 150px;
+    margin-bottom: 172px;
 
     &__wrapper {
+        width: 1297px;
+        margin: 0 auto;
         display: flex;
         flex-flow: column nowrap;
         justify-content: space-between;
-        background: $black;
+        padding: 39px 49px;
+        background: #000;
         border-radius: 25px;
+        background-image: url("../img//main/join/join.png");
+        background-position: right;
+        background-size: 586px auto;
+        background-repeat: no-repeat;
+        height: auto;
     }
 
     &__title {
@@ -15,9 +23,20 @@
         font-size: 40px;
         line-height: 145%;
         color: $white;
+        margin-bottom: 108px;
     }
 
     &__link {
+        display: block;
+        width: 270px;
+        padding: 5px 2px 2px 2px;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 145%;
+        text-align: center;
+        border: 2px solid #fff;
+        border-radius: 37px;
         color: $white;
+        margin-bottom: 7px;
     }
 }

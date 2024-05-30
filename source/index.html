@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="css/style.min.css" />
     </head>
     <body>
-
+        
         <header class="header">
             <div class="header__wrapper container">
                 <div class="header__logo">
@@ -21,9 +21,9 @@
                 </div>
             </div>
         </header>
-
+        
         <main class="page-main main">
-
+            
             <section class="main__present present">
                 <div class="present__wrapper container">
                     <div class="present__text">
@@ -216,232 +216,67 @@
                     </ul>
                 </div>
             </section>
-
+            
             
             <section class="main__necessary necessary" id="necessary">
+                
                 <div class="necessary__wrapper">
                     <h2 class="necessary__title">Только то, что вам действительно нужно</h2>
-                    <!--
-                    <div class="necessary__tabss">
-                        <ul class="necessary__tabs">
-                            <li>
-                                <input type="radio" name="tabs" id="client" checked >
-                                <label for="client" class="necessary__tabs-title">
-                                    <p>Клиенты</p>
-                                </label>
-                            </li>
-                            <li>
-                                <input type="radio" name="tabs" id="bot">
-                                <label for="bot" class="necessary__tabs-title">
-                                    <p>Чат-бот</p>
-                                </label>
-                            </li>
-                            <li>
-                                <input type="radio" name="tabs" id="schedule">
-                                <label for="schedule" class="necessary__tabs-title">
-                                    <p>Расписание</p>
-                                </label>
-                            </li>
-                            <li>
-                                <input type="radio" name="tabs" id="task">
-                                <label for="task" class="necessary__tabs-title">
-                                    <p>Задачи</p>
-                                </label>
-                            </li>
-                            <li>
-                                <input type="radio" name="tabs" id="plan">
-                                <label for="plan" class="necessary__tabs-title">
-                                    <p>Планы</p>
-                                </label>
-                            </li>
-                        </ul>
+                    
+                    <div class="necessary__tabs-wrapper">
+
+                        <nav class="necessary__tabs-items">
+                            <a href="#client" class="necessary__tabs-title">Клиенты</a>
+                            <a href="#bot" class="necessary__tabs-title">Чат-бот</a>
+                            <a href="#schedule" class="necessary__tabs-title">Расписание</a>
+                            <a href="#task" class="necessary__tabs-title">Задачи</a>
+                            <a href="#plan" class="necessary__tabs-title">Планы</a></ul>
+                        </nav>
                         
-                        <div id="tab-content-1" class="necessary__tab-content">
-                            <div class="necessary__tabs-panel">
+                        <div class="necessary__tabs-content">
+                            <div id="client" class="necessary__tabs-block active" data-index="0">
                                 <div class="necessary__tabs-text">
                                     <h4 class="necessary__tab-title">Цифровой администратор, который знает о ваших клиентах всё.</h4>
                                     <p class="necessary__tabs-description">Стройте крепкие отношения с потребителями с помощью знаний о их предпочтениях. Делайте персональные предложения, повышайте повторные покупки и получайте отзывы от лояльных клиентов.</p>
                                 </div>
                                 <div class="necessary__tabs-image"></div>
                             </div>
-                        </div>
-                      
-                        <div id="tab-content-2" class="necessary__tab-content">
-                            <div class="necessary__tabs-panel">
+                            <div id="bot" class="necessary__tabs-block" data-index="1">
                                 <div class="necessary__tabs-text">
-                                    <h4 class="necessary__tab-title">Цифровой администратор, который знает о ваших клиентах всё.</h4>
-                                    <p class="necessary__tabs-description">Стройте крепкие отношения с потребителями с помощью знаний о их предпочтениях. Делайте персональные предложения, повышайте повторные покупки и получайте отзывы от лояльных клиентов.</p>
+                                    <h4 class="necessary__tab-title">Создадим чат-бот для бизнеса, чтобы упростить рутинные задачи и привлечь клиентов.</h4>
+                                    <p class="necessary__tabs-description">Автоматизируем поддержку, ответы на частые вопросы и работу с возражениями. Откроем магазин или запустим образовательный курс. Привлечем новых клиентов и повысим доверие текущих с помощью игровых механик.</p>
+                                </div>
+                                <div class="necessary__tabs-image"></div>
+                            </div>
+                            <div id="schedule" class="necessary__tabs-block" data-index="2">
+                                <div class="necessary__tabs-text">
+                                    <h4 class="necessary__tab-title">Электронный журнал компании с функцией онлайн-записи для клиентов.</h4>
+                                    <p class="necessary__tabs-description">Ведите единое электронное расписание для сотрудников и клиентов — будьте в одном информационном поле.</p>
+                                </div>
+                                <div class="necessary__tabs-image"></div>
+                            </div>
+                            <div id="task" class="necessary__tabs-block" data-index="3">
+                                <div class="necessary__tabs-text">
+                                    <h4 class="necessary__tab-title">Функциональный трекер, который понимает стиль вашей работы.</h4>
+                                    <p class="necessary__tabs-description">Мотивируйте команду, двигайтесь к цели и оставайтесь всегда — единым целым.</p>
+                                </div>
+                                <div class="necessary__tabs-image"></div>
+                            </div>
+                            <div id="plan" class="necessary__tabs-block" data-index="4">
+                                <div class="necessary__tabs-text">
+                                    <h4 class="necessary__tab-title">Умный календарь для работыи жизни — он знает всё про ваши дела.</h4>
+                                    <p class="necessary__tabs-description">Ставьте амбициозные бизнес-цели и планируйте личный рост. Отслеживайте прогресс с опорой на аналитику.</p>
                                 </div>
                                 <div class="necessary__tabs-image"></div>
                             </div>
                         </div>
-                      
-                        <div id="tab-content-3" class="necessary__tab-content">
-                            <div class="necessary__tabs-panel">
-                                <div class="necessary__tabs-text">
-                                    <h4 class="necessary__tab-title">Цифровой администратор, который знает о ваших клиентах всё.</h4>
-                                    <p class="necessary__tabs-description">Стройте крепкие отношения с потребителями с помощью знаний о их предпочтениях. Делайте персональные предложения, повышайте повторные покупки и получайте отзывы от лояльных клиентов.</p>
-                                </div>
-                                <div class="necessary__tabs-image"></div>
-                            </div>
-                        </div>
-                      
-                        <div id="tab-content-4" class="necessary__tab-content">
-                            <div class="necessary__tabs-panel">
-                                <div class="necessary__tabs-text">
-                                    <h4 class="necessary__tab-title">Цифровой администратор, который знает о ваших клиентах всё.</h4>
-                                    <p class="necessary__tabs-description">Стройте крепкие отношения с потребителями с помощью знаний о их предпочтениях. Делайте персональные предложения, повышайте повторные покупки и получайте отзывы от лояльных клиентов.</p>
-                                </div>
-                                <div class="necessary__tabs-image"></div>
-                            </div>
-                        </div>
-                      
-                        <div id="tab-content-5" class="necessary__tab-content">
-                            <div class="necessary__tabs-panel">
-                                <div class="necessary__tabs-text">
-                                    <h4 class="necessary__tab-title">Цифровой администратор, который знает о ваших клиентах всё.</h4>
-                                    <p class="necessary__tabs-description">Стройте крепкие отношения с потребителями с помощью знаний о их предпочтениях. Делайте персональные предложения, повышайте повторные покупки и получайте отзывы от лояльных клиентов.</p>
-                                </div>
-                                <div class="necessary__tabs-image"></div>
-                            </div>
-                        </div>
-                    </div>
-                -->
-                </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                <div class="necessary__tabs">
-
-                    <!--
-                    <ul>
-                        <li>
-                            <input type="radio" name="tabs" id="client" checked >
-                            <label for="client" class="necessary__tabs-title">
-                                <p>Клиенты</p>
-                            </label>
-                        </li>
-                        <li>
-                            <input type="radio" name="tabs" id="bot">
-                            <label for="bot" class="necessary__tabs-title">
-                                <p>Чат-бот</p>
-                            </label>
-                        </li>
-                        <li>
-                            <input type="radio" name="tabs" id="schedule">
-                            <label for="schedule" class="necessary__tabs-title">
-                                <p>Расписание</p>
-                            </label>
-                        </li>
-                        <li>
-                            <input type="radio" name="tabs" id="task">
-                            <label for="task" class="necessary__tabs-title">
-                                <p>Задачи</p>
-                            </label>
-                        </li>
-                        <li>
-                            <input type="radio" name="tabs" id="plan">
-                            <label for="plan" class="necessary__tabs-title">
-                                <p>Планы</p>
-                            </label>
-                        </li>
-                    </ul>
-                    -->
-
-                    
-                    <input type="radio" name="tabs" id="client" checked >
-                    <label for="client" class="necessary__tabs-title">
-                        <p>Клиенты</p>
-                    </label>
-
-                    <input type="radio" name="tabs" id="bot">
-                    <label for="bot" class="necessary__tabs-title">
-                        <p>Чат-бот</p>
-                    </label>
-
-                    <input type="radio" name="tabs" id="schedule">
-                    <label for="schedule" class="necessary__tabs-title">
-                        <p>Расписание</p>
-                    </label>
-
-                    <input type="radio" name="tabs" id="task">
-                    <label for="task" class="necessary__tabs-title">
-                        <p>Задачи</p>
-                    </label>
-
-                    <input type="radio" name="tabs" id="plan">
-                    <label for="plan" class="necessary__tabs-title">
-                        <p>Планы</p>
-                    </label>
-                
-                    
-                    <div id="tab-content-1" class="necessary__tab-content">
-                        <div class="necessary__tabs-panel">
-                            <div class="necessary__tabs-text">
-                                <h4 class="necessary__tab-title">Цифровой администратор, который знает о ваших клиентах всё.</h4>
-                                <p class="necessary__tabs-description">Стройте крепкие отношения с потребителями с помощью знаний о их предпочтениях. Делайте персональные предложения, повышайте повторные покупки и получайте отзывы от лояльных клиентов.</p>
-                            </div>
-                            <div class="necessary__tabs-image"></div>
-                        </div>
-                    </div>
-                  
-                    <div id="tab-content-2" class="necessary__tab-content">
-                        <div class="necessary__tabs-panel">
-                            <div class="necessary__tabs-text">
-                                <h4 class="necessary__tab-title">Создадим чат-бот для бизнеса, чтобы упростить рутинные задачи и привлечь клиентов.</h4>
-                                <p class="necessary__tabs-description">Автоматизируем поддержку, ответы на частые вопросы и работу с возражениями. Откроем магазин или запустим образовательный курс. Привлечем новых клиентов и повысим доверие текущих с помощью игровых механик.</p>
-                            </div>
-                            <div class="necessary__tabs-image"></div>
-                        </div>
-                    </div>
-                  
-                    <div id="tab-content-3" class="necessary__tab-content">
-                        <div class="necessary__tabs-panel">
-                            <div class="necessary__tabs-text">
-                                <h4 class="necessary__tab-title">Электронный журнал компании с функцией онлайн-записи для клиентов.</h4>
-                                <p class="necessary__tabs-description">Ведите единое электронное расписание для сотрудников и клиентов — будьте в одном информационном поле.</p>
-                            </div>
-                            <div class="necessary__tabs-image"></div>
-                        </div>
-                    </div>
-                  
-                    <div id="tab-content-4" class="necessary__tab-content">
-                        <div class="necessary__tabs-panel">
-                            <div class="necessary__tabs-text">
-                                <h4 class="necessary__tab-title">Функциональный трекер, который понимает стиль вашей работы.</h4>
-                                <p class="necessary__tabs-description">Мотивируйте команду, двигайтесь к цели и оставайтесь всегда — единым целым.</p>
-                            </div>
-                            <div class="necessary__tabs-image"></div>
-                        </div>
-                    </div>
-                  
-                    <div id="tab-content-5" class="necessary__tab-content">
-                        <div class="necessary__tabs-panel">
-                            <div class="necessary__tabs-text">
-                                <h4 class="necessary__tab-title">Умный календарь для работыи жизни — он знает всёпро ваши дела.</h4>
-                                <p class="necessary__tabs-description">Ставьте амбициозные бизнес-цели и планируйте личный рост. Отслеживайте прогресс с опорой на аналитику.</p>
-                            </div>
-                            <div class="necessary__tabs-image"></div>
-                        </div>
+                        
                     </div>
                 </div>
             </section>
         
 
-
+            
             <section class="main__feedback feedback">
                 <div class="feedback__wrapper">
                     <form action="" class="feedback__form">
@@ -572,21 +407,77 @@
             </section>
 
             <section class="main__join join">
-                <div class="join__wrapper container">
+                <div class="join__wrapper">
                     <h2 class="join__title">Расскажите о своём деле команде BotFarm</h2>
-                    <a href="#" class="join__link">Стать клиентом</a>
+                    <a href="#" class="join__link">Стать клиентом &#10230;</a>
                 </div>
             </section>
-        
+            
         </main>
-
+        
         <footer class="page-footer footer" id="footer">
             <div class="footer__wrapper container">
-                
-                
+                <ul class="footer__list">
+                    <li class="footer__link">
+                        <div class="footer__ability ability">
+                            <h4 class="ability__title">Все возможности</h4>
+                            <ul class="ability__list">
+                                <li class="ability__item">
+                                    <a href="#">Планирование времени</a>
+                                </li>
+                                <li class="ability__item">
+                                    <a href="#">Чат-боты</a>
+                                </li>
+                                <li class="ability__item">
+                                    <a href="#">Задачи</a>
+                                </li>
+                                <li class="ability__item">
+                                    <a href="#">пункт</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="footer__link">
+                        <div class="footer__knowledge knowledge">
+                            <h4 class="knowledge__title">База знаний</h4>
+                            <ul class="knowledge__list">
+                                <li class="knowledge__item">
+                                    <a href="#">пункт</a>
+                                </li>
+                                <li class="knowledge__item">
+                                    <a href="#">пункт</a>
+                                </li>
+                                <li class="knowledge__item">
+                                    <a href="#">пункт</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="footer__link">
+                        <div class="footer__our-blog our-blog">
+                            <h4 class="our-blog__title">Блог</h4>
+                            <ul class="our-blog__list">
+                                <li class="our-blog__item">
+                                    <a href="#">пункт</a>
+                                </li>
+                                <li class="our-blog__item">
+                                    <a href="#">пункт</a>
+                                </li>
+                                <li class="our-blog__item">
+                                    <a href="#">пункт</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="footer__link">
+                        <div class="header__logo">
+                            <img src="../img/header/logo.svg" alt="logo-picture" width="165" height="44">
+                        </div>
+                    </li>
+                </ul>                
             </div>
         </footer>
-
+        
         <script src="js/main.js" type="module"></script>
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
         <script src="js/slick.min.js"></script>
